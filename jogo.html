@@ -1,0 +1,79 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+
+
+		<title>Estourando balões</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+
+	<script src="jogo.js"></script>
+                      
+	<body onload="inicioJogo()" >
+
+		<div class="container">
+		
+		<!--cenario do jogo esquerdo -->
+			<div class="senario">
+				
+				<table  class="tabela1">
+					 
+					 <tr>
+					 	<td>
+					 		<img src="imagens/balao_azul_grande.png">
+					 	</td>
+					 	<td>
+					 		<span id="baloesCheios" class="numBaloes"></span>
+					 	</td>
+
+					 </tr>
+
+
+
+				</table>
+
+				<br>
+
+				<table  class="tabela">
+					 
+					 <tr>
+					 	<td>
+					 		<img src="imagens/balao_azul_grande_estourado.png">
+					 	</td>
+					 	<td>
+					 		<span id="baloesEstourados" class="numBaloes"></span>
+					 	</td>
+
+					 </tr>
+
+				</table>
+
+				<br>
+
+				<table style="width:140px ; height: 132px">
+					 
+					 <tr >
+					 	<td style="background: url('imagens/cronometro.png');"> <!-- Adicionar a img como background da td -->
+					 	<span id="cronometro" class="segundos"></span> <!-- o conteudo vira pro meu span com a innerHTML -->
+					 	</td>
+					 	
+
+					 </tr>
+
+				</table>
+
+			</div>
+
+	   <!-- cenario principal -->
+
+			<div id="baloesCenarios" class="cenarioPrincipal">
+				
+			</div>
+
+</div><!--fim div -->
+
+
+	</body>
+	
+</html>
